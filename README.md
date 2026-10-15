@@ -9,7 +9,7 @@ An AI agent that reads Danish receipts and extracts the shop name, address, CVR 
 When something is not printed on the receipt or it is not readable, the agent looks it up instead of guessing: CVR numbers it has seen before are recalled from a local vector database and anything still missing is searched for on the web.
 
 ## How it works
-A Lanfchain agent sends the receipt image to a vision-capable model on [OpenRouter](https://openrouter.ai) and returns the result as a structured `Receipt` object (a Pydantic model). The agent is connected to 2 MCP servers:
+A langchain agent sends the receipt image to a vision-capable model on [OpenRouter](https://openrouter.ai) and returns the result as a structured `Receipt` object (a Pydantic model). The agent is connected to 2 MCP servers:
 
 - **Tavily** (hosted over streamable HTTP) for web search. Only the `tavily_search` tool is exposed to the agent.
 - **Qdrant** ([`mcp-server-qdrant`](https://github.com/qdrant/mcp-server-qdrant)), started locally with `uvx`) as a local knowledge base of shop name - CVR pairs. It is stored on disk in `memory/qdrant`, in the `knowledge` collection.

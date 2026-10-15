@@ -67,7 +67,7 @@ def saved_note(path: str | Path) -> str:
 
 def render_receipt(receipt: Receipt) -> str:
     """Render the receipt as a Markdown table"""
-    shop_src = SOURCE_LABELS.get(receipt.shop_source, receipt.shop_source)
+    shop_src = SOURCE_LABELS.get(receipt.address_source, receipt.address_source)
     cvr_src = SOURCE_LABELS.get(receipt.cvr_source, receipt.cvr_source)
 
     rows = [

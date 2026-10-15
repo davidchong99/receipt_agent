@@ -29,7 +29,7 @@ SYSTEM_PROMPT = """You extract data from receipt, most of them in Danish.
 
 Read the receipt image and figure out:
 - shop_name: the shop name as printed
-- shop_address: must have street, postal code and city of the shop
+- shop_address: address of the shop as printed
 - shop_cvr: the Danish CVR company registration ("CVR-NR")
 - amount: the total paid as printed in receipt, look for "I ALT", "TOTAL", "AT BETALE", "SUM", "Bon total" or similar.
 - moms: the Danish VAT or MOMS as printed in receipt ("MOMS", "HERAF MOMS", "MOMS UDGØR")

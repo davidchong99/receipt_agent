@@ -2,4 +2,13 @@
 name = "receipt-agent"
 version = "0.1.0"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "dotenv>=0.9.9",
+    "gradio>=6.30.0",
+    "langchain-openrouter>=0.2.9",
+    "langchain-tavily>=0.2.18",
+    "langchain[mcp]>=1.4.4",
+    "pydantic>=2.14.1",
+    "qdrant-client>=1.19.1",
+    "typing>=3.10.0.0",
+]

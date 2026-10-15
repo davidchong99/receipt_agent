@@ -64,9 +64,9 @@ class Receipt(BaseModel):
         description="Street, post code and city of the shop"
     )
     shop_cvr: int | None = Field(description="Danish company registration number CVR")
-    amount: float | None = Field("Total paid, VAT included")
-    moms: float | None = Field("VAT (moms) printed on the receipt")
-    shop_source: Literal["receipt", "web_search", "not_found"] = Field(
+    amount: float | None = Field(description="Total paid, VAT included")
+    moms: float | None = Field(description="VAT (moms) printed on the receipt")
+    address_source: Literal["receipt", "web_search", "not_found"] = Field(
         description="Where the address comes from"
     )
     cvr_source: Literal["receipt", "web_search", "vectordb", "not_found"] = Field(

@@ -30,13 +30,15 @@ Langsmith is integrated for tracing and debug.
 
 This agent is tested with the following Openrouter LLM models:
 
-| Model                            | Observation         |
-|----------------------------------|---------------------|
-| `openai/gpt-6-luna`              | Functional          |
-| `nex-agi/nex-n2.5-pro`           | Functional          |
-| `anthropic/claude-haiku-5.5`     | Functional          |
-| `inclusionai/ling-3.0-flash-vl`  | Inconsistent result |
-| `mistralai/mistral-medium-3-5`   | Inconsistent result |
+| Model                            | Observation          |
+|----------------------------------|----------------------|
+| `openai/gpt-6-luna`              | Functional           |
+| `nex-agi/nex-n2.5-pro`           | Functional           |
+| `anthropic/claude-haiku-5.5`     | Functional           |
+| `inclusionai/ling-3.0-flash-vl`  | Partially functional |
+| `mistralai/mistral-medium-3-5`   | Partially functional |
+
+Some sample receipts are provided in `sample_receipts/`
 
 ## Requirements
 

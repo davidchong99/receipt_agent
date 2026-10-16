@@ -4,7 +4,7 @@
 https://github.com/user-attachments/assets/644dd73e-1945-413f-8208-63fc87e668a9
 
 
-An AI agent that reads Danish receipts and extracts the shop name, address, CVR number, total amount and moms (VAT) from the receipt. It comes with a small Gradio web app. User can drop or upload a receipt photo and the extracted dat will appear next to it.
+An AI agent that reads Danish receipts and extracts the shop name, address, CVR number, total amount and moms (VAT) from the receipt. It comes with a small Gradio web app. User can drop or upload a receipt photo and the extracted that will appear next to it.
 
 When something is not printed on the receipt or it is not readable, the agent looks it up instead of guessing: CVR numbers it has seen before are recalled from a local vector database and anything still missing is searched for on the web.
 
